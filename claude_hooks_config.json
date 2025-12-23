@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:\\Projects\\monitor-claude\\update_status.py working \"Claude is working\""
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:\\Projects\\monitor-claude\\update_status.py waiting \"Needs your input\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:\\Projects\\monitor-claude\\update_status.py idle \"Task completed\""
+          }
+        ]
+      }
+    ]
+  }
+}
